@@ -69,7 +69,8 @@
 
 MODULE_AUTHOR("Qumranet");
 MODULE_LICENSE("GPL");
-
+extern uint64_t total_exits;
+extern u32 exit_per_reason[69];
 #ifdef MODULE
 static const struct x86_cpu_id vmx_cpu_id[] = {
 	X86_MATCH_FEATURE(X86_FEATURE_VMX, NULL),
@@ -6286,6 +6287,15 @@ static int __vmx_handle_exit(struct kvm_vcpu *vcpu, fastpath_t exit_fastpath)
 	union vmx_exit_reason exit_reason = vmx->exit_reason;
 	u32 vectoring_info = vmx->idt_vectoring_info;
 	u16 exit_handler_index;
+        
+        u32 exit_rsn = exit_reason.basic; 
+
+
+
+                 exit_per_reason[(int)exit_rsn]++;
+                 total_exits++;  
+    
+
 
 	/*
 	 * Flush logged GPAs PML buffer, this will make dirty_bitmap more
@@ -6459,9 +6469,22 @@ unexpected_vmexit:
 	return 0;
 }
 
+extern uint64_t total_time;
+extern uint64_t total_time_per_reason[69];
+
 static int vmx_handle_exit(struct kvm_vcpu *vcpu, fastpath_t exit_fastpath)
 {
+
+	struct vcpu_vmx *vmx = to_vmx(vcpu);
+	union vmx_exit_reason exit_reason = vmx->exit_reason;
+	u32 rsn = exit_reason.basic;
+	 uint64_t startTime = rdtsc();
 	int ret = __vmx_handle_exit(vcpu, exit_fastpath);
+	uint64_t endTime = rdtsc();
+	
+	total_time = total_time + endTime - startTime;
+	
+	total_time_per_reason[(int)rsn] = total_time_per_reason[(int)rsn] +  endTime - startTime;
 
 	/*
 	 * Exit to user space when bus lock detected to inform that there is

@@ -3,12 +3,13 @@
 >> By Asha Yalla(016006250) and Mounica Reddy Kandi(016021902)
 
 
-
-
 ### Asha's Contribution:
+I have examined the kernal source code and built the kernal. To run the expected functionality we need to set-up the environment. I tried to understand and study about the leaf Function.  I added a leaf function under kvm_emulate_cpuid for calculating the total number of exits and storing it in eax register(0x4FFFFFFC). When I was trying to build the kernel for the nested Virtual Machine by running make modules, I faced multiple errors. Once that was successful, I then installed Virtual Machine Manager, built a nested VM with 4 cores of CPU, 4GB of memory and 20GB of disk space with debian OS on it. This was followed by creating a test .c file for printing register values in nested VM and successfully running it. 
 
 
 ### Mounica's Contribution:
+Along with Asha I have examined the kernal source code and built the kernal.  I've tried to understand the function and added the required code for 0x4FFFFFFD in the cpuid.c under kvm_emulate_cpuid for calculating the total time spent processing all the  exits in ebx and ecx and also added required code in vmx.c file. I've tried to setup the nested VM and building the linux kernal which failed multiple times. After the final setup, I have created a test file in c for testing the code.
+
 
 ### Steps followed:
 
@@ -58,17 +59,11 @@ Step 14: Run `sudo make install`
 <img width="468" alt="image" src="https://user-images.githubusercontent.com/12370049/205850808-68800bce-3c92-4e71-a04b-e7a6423ab754.png">
 
 
-
-
-
-
 Step 15: Run `make -j 8`
 
 Step 16: Run `sudo make INSTALL_MOD_STRIP=1 modules_install && make install`
 
 <img width="468" alt="image" src="https://user-images.githubusercontent.com/99624135/205842893-24ee8786-2fc7-40f1-92e5-76f5219c893d.png">
-
-
 
 
 Step 17: Run this command to know the version of the kernal `uname -a`

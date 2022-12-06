@@ -1,18 +1,17 @@
-Linux kernel
-============
+# Assignment 2
 
-There are several guides for kernel developers and users. These guides can
-be rendered in a number of formats, like HTML and PDF. Please read
-Documentation/admin-guide/README.rst first.
+>> By Asha Yalla(016006250) and Mounica Reddy Kandi(016021902)
 
-In order to build the documentation, use ``make htmldocs`` or
-``make pdfdocs``.  The formatted documentation can also be read online at:
+## Asha's Contribution:
 
-    https://www.kernel.org/doc/html/latest/
+## Mounica's Contribution:
 
-There are various text files in the Documentation/ subdirectory,
-several of them using the Restructured Text markup notation.
+## Steps followed:
 
-Please read the Documentation/process/changes.rst file, as it contains the
-requirements for building and running the kernel, and information about
-the problems which may result by upgrading your kernel.
+Step 1: Forked the https://github.com/torvalds/linux repository and cloned it into the Cascade Lake Architecture n2-standard-2 instance in GCP.
+
+Step 2: Install gcc by 'sudo apt-get install gcc'
+
+Step 3: Install make by 'sudo apt install make'
+
+Step 4: Install linus headers by running 'sudo apt install linus-headers-$(uname -r)'

@@ -10,22 +10,26 @@
 
 Step 1: Forked the https://github.com/torvalds/linux repository and cloned it into the Cascade Lake Architecture n2-standard-2 instance in GCP.
 
-Step 2: Install gcc by '''sudo apt-get install gcc'''
+Step 2: Enter this command to check the virtualization capability of the cpu
 
-Step 3: Install make by 'sudo apt install make'
+![WhatsApp Image 2022-12-05 at 10 07 47 PM](https://user-images.githubusercontent.com/99624135/205836536-f1eba314-f08a-4e3f-afb9-676268f0ba3f.jpeg)
 
-Step 4: Install linus headers by running 'sudo apt install linus-headers-$(uname -r)'
+Step 3: Install gcc by `sudo apt-get install gcc`
 
-Step 5: Run make
+Step 4: Install make by `sudo apt install make`
 
-Step 6: Install ncurses by running 'sudo apt install libncurses-dev'
+Step 5: Install linus headers by running `sudo apt install linus-headers-$(uname -r)`
 
-Step 7: Install flex by running 'sudo apt install flex'
+Step 6: Run make
 
-Step 8: Install bison by running 'sudo apt-get install bison'
+Step 7: Install ncurses by running 'sudo apt install libncurses-dev'
 
-Step 9: Install 'sudo apt-get install libssl-dev'
+Step 8: Install flex by running 'sudo apt install flex'
 
-Step 10: Install 'sudo apt install libelf-dev'
+Step 9: Install bison by running 'sudo apt-get install bison'
 
-Step 11: Install 'sudo
+Step 10: Install 'sudo apt-get install libssl-dev'
+
+Step 11: Install 'sudo apt install libelf-dev'
+
+Step 12: Install 'sudo

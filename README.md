@@ -58,9 +58,31 @@ Step 12: Install `sudo apt install dwarves`
 
 Step 13: Install `apt-get install zstd`
 
-Step 14: In linus folder copy oldconfig file and run `make oldconfig`
+Step 14: In linux folder copy oldconfig file and run `make oldconfig`
 
 ![image](https://user-images.githubusercontent.com/99624135/205839665-4be4bdd4-1609-4f7f-902e-cb12960a815d.png)
- 
+
+Step 15: Modify the code in the cpuid.c file and vmx.c file
+
+Step 16: Run `make -j 8 modules`
+
+Step 17: Run `sudo make INSTALL_MOD_STRIP=1 modules_install && make install’
+
+Step 18: Run `lsmod | grep kvm’
+
+Step 19: Run ‘rmmod kvm’
+
+Step 20: Run ‘rmmod kvm_intel’
+
+<img width="468" alt="image" src="https://user-images.githubusercontent.com/99624135/205846273-9efc9fcd-b0e8-4aeb-9e50-2476ceb74204.png">
+
+Step 21: Run ‘modprobe kvm’
+
+Step 22: Run ‘modprobe kvm_intel’
+
+Step 17: Run `lsmod | grep kvm’ again
+
+<img width="468" alt="image" src="https://user-images.githubusercontent.com/99624135/205846237-fba1ca48-0a37-40d2-9899-d25fb4193ab4.png">
+
 
 

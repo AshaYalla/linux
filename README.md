@@ -2,7 +2,11 @@
 
 >> By Asha Yalla(016006250) and Mounica Reddy Kandi(016021902)
 
+
+
+
 ### Asha's Contribution:
+
 
 ### Mounica's Contribution:
 
@@ -70,17 +74,17 @@ Step 17: Run `sudo make INSTALL_MOD_STRIP=1 modules_install && make install’
 
 Step 18: Run `lsmod | grep kvm’
 
-Step 19: Run ‘rmmod kvm’
+Step 19: Run `rmmod kvm`
 
-Step 20: Run ‘rmmod kvm_intel’
+Step 20: Run `rmmod kvm_intel`
 
 <img width="468" alt="image" src="https://user-images.githubusercontent.com/99624135/205846273-9efc9fcd-b0e8-4aeb-9e50-2476ceb74204.png">
 
-Step 21: Run ‘modprobe kvm’
+Step 21: Run `modprobe kvm`
 
-Step 22: Run ‘modprobe kvm_intel’
+Step 22: Run `modprobe kvm_intel`
 
-Step 17: Run `lsmod | grep kvm’ again
+Step 17: Run `lsmod | grep kvm` again
 
 <img width="468" alt="image" src="https://user-images.githubusercontent.com/99624135/205846237-fba1ca48-0a37-40d2-9899-d25fb4193ab4.png">
 

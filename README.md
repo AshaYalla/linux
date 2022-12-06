@@ -47,9 +47,13 @@ Step 13: Run `make -j 8 modules`
 
 
 Errors faced and rectified while running make -j 8 modules:
+
 <img width="468" alt="image" src="https://user-images.githubusercontent.com/12370049/205850599-e779bea4-9b02-434a-8e6b-4b547e46a81d.png">
+
 <img width="468" alt="image" src="https://user-images.githubusercontent.com/12370049/205850618-b8ddd825-ad8c-4c0e-ba42-41714d06862f.png">
+
 <img width="468" alt="image" src="https://user-images.githubusercontent.com/12370049/205850637-155284f4-1388-4c91-93fd-8fe4a99870e8.png">
+
 <img width="468" alt="image" src="https://user-images.githubusercontent.com/12370049/205850681-0ccb7d2e-c3e1-4e9f-8bf6-7ef7d5726b10.png">
 
 <img width="455" alt="image" src="https://user-images.githubusercontent.com/12370049/205850703-396bca5c-def5-4963-a353-2a1d8fab8cb2.png">
@@ -88,13 +92,14 @@ Step 21: Modify the code in the cpuid.c file and vmx.c file
 Step 22: Run `make -j 8 modules`
 
 Step 23: Run `make -j 8`
+
 ![image](https://user-images.githubusercontent.com/99624135/205839150-57d2c4d5-236e-41a6-ad65-2f105aa4f4f8.png)
 
 Step 24: Run `sudo make INSTALL_MOD_STRIP=1 modules_install && make install’
 
 Step 25: Run `lsmod | grep kvm’
-<img width="583" alt="image" src="https://user-images.githubusercontent.com/12370049/205849583-622305dc-7eaa-4a71-84df-5576317da9ca.png">
 
+<img width="583" alt="image" src="https://user-images.githubusercontent.com/12370049/205849583-622305dc-7eaa-4a71-84df-5576317da9ca.png">
 
 Step 26: Run `rmmod kvm`
 
@@ -109,19 +114,23 @@ Step 28: Run `modprobe kvm`
 <img width="468" alt="image" src="https://user-images.githubusercontent.com/99624135/205846237-fba1ca48-0a37-40d2-9899-d25fb4193ab4.png">
 
 Step 29: Followed these steps Set up Chrome Remote Desktop for Linux Instance GCP 
+
 https://cloud.google.com/architecture/chrome-desktop-remote-on-compute-engine#cinnamon
 
 Step 30: Downloaded the iso image. 
+
 <img width="700" alt="image" src="https://user-images.githubusercontent.com/12370049/205852383-c325fe65-e3a6-4799-b3c4-b39b324e3e62.png">
 
 
 Step 31: Followed these steps to install an inner Virtual Machine: 
+
 https://www.tecmint.com/install-kvm-on-ubuntu/
 
 <img width="1198" alt="image" src="https://user-images.githubusercontent.com/12370049/205852286-b1e01fca-8226-4e71-a97f-f507907cbc2c.png">
 
 
 Step 32: Ran the test.c file and got this as output:
+
 ![image](https://user-images.githubusercontent.com/12370049/205851905-755b0133-323b-4196-8885-ed992c837715.png)
 
 

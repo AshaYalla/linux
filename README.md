@@ -10,7 +10,7 @@
 
 Step 1: Forked the https://github.com/torvalds/linux repository and cloned it into the Cascade Lake Architecture n2-standard-2 instance in GCP.
 
-Step 2: Install gcc by 'sudo apt-get install gcc'
+Step 2: Install gcc by '''sudo apt-get install gcc'''
 
 Step 3: Install make by 'sudo apt install make'
 

@@ -1,6 +1,6 @@
 # Assignment 2
 
->> By Asha Yalla(016006250) and Mounica Reddy Kandi(016021902)
+By Asha Yalla(016006250) and Mounica Reddy Kandi(016021902)
 
 ## Asha's Contribution:
 

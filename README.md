@@ -135,4 +135,33 @@ Step 32: Ran the test.c file and got this as output:
 
 
 
+# Assignment 3
+
+For Assignment 3, you should likely be using the environment you created for assignment 2.
+
+## Team Members Contribution:
+
+### Asha's Contribution:
+1. I’ve referred the lectures and learned about the exits.
+2.	Completed the code for CPUID leaf node %eax = 0x4FFFFFFF part.
+3.	Utilized the setup we implemented for assignment 2 and modified the cpuid.c and vmx.c file and returned the total time spent for the exits in ebx and ecx.
+4.	Noted the number of exits and output by running test files and recorded the output in readme.md file.
+
+### Mounica's Contribution:
+1.	Completed the code for CPUID leaf node %eax = 0x4FFFFFFE part.
+2.	Utilized the setup we implemented for assignment 2.
+3.	Modified the cpuid.c and vmx.c file and returned the number of exits for the exit number provided ecx.
+4.	Learned about the exits and noted the number of exits by running the test files and recorded the output along with Asha.
+
+## Steps Followed:
+
+1.	We are using the environment created for assignment 2, so we will directly move to the code modifications.
+2.	Modify the code in the cpuid.c file and vmx.c file
+3.	Run make -j 8 modules
+4.	Run make -j 8
+5.	Run `sudo make INSTALL_MOD_STRIP=1 modules_install && make install’
+6.	Run `lsmod | grep kvm’
+7.	Run rmmod kvm
+8.	Run rmmod kvm_intel
+9.	Run modprobe kvm Run modprobe kvm_intel Run lsmod | grep kvm again
 

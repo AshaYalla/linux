@@ -137,7 +137,7 @@ Step 32: Ran the test.c file and got this as output:
 
 # Assignment 3
 
-For Assignment 3, you should likely be using the environment you created for assignment 2.
+For Assignment 3, environment created for assignment 2 is utilized. 
 
 ## Team Members Contribution:
 

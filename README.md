@@ -165,6 +165,12 @@ For Assignment 3, you should likely be using the environment you created for ass
 8.	Run rmmod kvm_intel
 9.	Run modprobe kvm Run modprobe kvm_intel Run lsmod | grep kvm again
 
+<img width="461" alt="image" src="https://user-images.githubusercontent.com/12370049/207256357-b733c5c9-5210-420a-844c-3b154e816ab1.png">
+
+
+<img width="433" alt="image" src="https://user-images.githubusercontent.com/12370049/207256421-c7eac1af-064d-4e5b-93d8-369ff71cc834.png">
+
+
 ### Question 3:
 Comment on the frequency of exits – does the number of exits increase at a stable rate? Or are there more exits performed during certain VM operations. Approximately how many exits does a full VM boot entail?
 

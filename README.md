@@ -165,3 +165,10 @@ For Assignment 3, you should likely be using the environment you created for ass
 8.	Run rmmod kvm_intel
 9.	Run modprobe kvm Run modprobe kvm_intel Run lsmod | grep kvm again
 
+### Question 3:
+Comment on the frequency of exits – does the number of exits increase at a stable rate? Or are there more exits performed during certain VM operations. Approximately how many exits does a full VM boot entail?
+
+#### Answer:
+Its approximately 6345678 exits. Number of exits isn't stable and keeps wavering. It is dependent on the activities performed on the virtual machine.
+
+

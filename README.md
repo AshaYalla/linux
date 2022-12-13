@@ -172,3 +172,15 @@ Comment on the frequency of exits – does the number of exits increase at a sta
 Its approximately 6345678 exits. Number of exits isn't stable and keeps wavering. It is dependent on the activities performed on the virtual machine.
 
 
+### Question 4:
+Of the exit types defined in the SDM, which are the most frequent? Least?
+
+#### Answer:
+Exit #49 - EPT_MISCONFIG
+Exit #30 - IO_INSTRUCTION
+Exit #28 - CR_ACCESS
+Following are some of the least frequently called exits(>0):
+Exit #54 - WBINVD
+Exit #29 - DR_ACCESS
+Exit #0 - EXCEPTION_NMI
+

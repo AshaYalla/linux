@@ -179,6 +179,7 @@ Of the exit types defined in the SDM, which are the most frequent? Least?
 Exit #49 - EPT_MISCONFIG
 Exit #30 - IO_INSTRUCTION
 Exit #28 - CR_ACCESS
+
 Following are some of the least frequently called exits(>0):
 Exit #54 - WBINVD
 Exit #29 - DR_ACCESS
